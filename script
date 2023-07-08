@@ -1,21 +1,29 @@
-local aux = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Upbolt/Hydroxide/revision/ohaux.lua"))()
-local player = game.Players.LocalPlayer.Name
-local scriptPath = workspace[player].CharacterScript
-local closureName = "handleStaminaRegen"
-local upvalueIndex = 2
-local closureConstants = {
-	[1] = "Velocity",
-	[2] = "Magnitude",
-	[3] = 16.5,
-	[4] = "Stamina",
-	[5] = "tick",
-	[7] = 1.5
-}
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+local Window = Library.CreateLib("Metro Stonik", "RJTheme6")
 
-local closure = aux.searchClosure(scriptPath, closureName, upvalueIndex, closureConstants)
-local value = math.huge
-local elementIndex = "Stamina"
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("Misc")
 
+local Tab = Window:NewTab("cooming soon")
+local Section = Tab:NewSection("cooming soon")
 
-
-debug.getupvalue(closure, upvalueIndex)[elementIndex] = value
+-- noclip
+Section:NewToggle("noclip", "noclip", function(noclip)
+    if noclip then
+        Head.CanCollide = false
+        Torso.CanCollide = false
+        LeftArm.CanCollide = false
+        RightArm.CanCollide = false
+        LeftLeg.CanCollide = false
+        RightLeg.CanCollide = false
+        HRP.CanCollide = false
+    else
+        Head.CanCollide = true
+    Torso.CanCollide = true
+    LeftArm.CanCollide = true
+    RightArm.CanCollide = true
+    LeftLeg.CanCollide = true
+    RightLeg.CanCollide = true
+    HRP.CanCollide = true
+    end
+end)
