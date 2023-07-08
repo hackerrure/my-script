@@ -2,13 +2,13 @@
 
 -- Instances
 
-local FlyScript = Instance.new("ScreenGui")
-local Gradient = Instance.new("Frame")
-local UIGradient = Instance.new("UiGradient")
-local UICorner = Instance.new("UICorner")
-local button = Instance.new("TextButton")
-local shadow = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
+local FlyScript = game.Players.LocalPlayer.Character.new("ScreenGui")
+local Gradient = game.Players.LocalPlayer.Character.new("Frame")
+local UIGradient = game.Players.LocalPlayer.Character.new("UiGradient")
+local UICorner = game.Players.LocalPlayer.Character.new("UICorner")
+local button = game.Players.LocalPlayer.Character.new("TextButton")
+local shadow = game.Players.LocalPlayer.Character.new("Frame")
+local TextLabel = game.Players.LocalPlayer.Character.new("TextLabel")
 
 --Properties
 
