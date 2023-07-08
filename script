@@ -5,6 +5,6 @@ local Tab = Window:NewTab("Lovlya stonikov")
 local Section = Tab:NewSection("Lovlya stonikov")
 
 -- teleport
-Section:NewKeybind("Teleport", "Teleport", Enum.KeyCode.T, function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-487.335297, 49.0375328, -11.7236366, 0.998839855, 3.77769567e-08, -0.0481550023, -4.19701323e-08, 1, -8.60655192e-08, 0.0481550023, 8.79867414e-08, 0.998839855)
+Section:NewButton("Cave", "Wood", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3496.74536, -199.619904, 488.096832, 0.229261667, -2.21277325e-08, 0.97336483, -1.35332723e-08, 1, 2.59207997e-08, -0.97336483, -1.91154577e-08, 0.229261667)
 end)
