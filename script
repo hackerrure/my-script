@@ -4,7 +4,7 @@
 
 local FlyScript = game.Players.LocalPlayer.Character.new("ScreenGui")
 local Gradient = game.Players.LocalPlayer.Character.new("Frame")
-local UIGradient = game.Players.LocalPlayer.Character.new("UiGradient")
+local UIGradient = game.Players.LocalPlayer.Character.new("UIGradient.Enabled")
 local UICorner = game.Players.LocalPlayer.Character.new("UICorner")
 local button = game.Players.LocalPlayer.Character.new("TextButton")
 local shadow = game.Players.LocalPlayer.Character.new("Frame")
