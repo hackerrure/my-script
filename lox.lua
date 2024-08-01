@@ -1,1 +1,1 @@
-RunConsoleCommand("ba setgroup "STEAM_1:0:627609570" sudoroot"")
+RunConsoleCommand("ba setgroup", "STEAM_1:0:627609570" "sudoroot"")
